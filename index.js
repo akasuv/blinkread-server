@@ -9,4 +9,4 @@ app.use(koaBody());
 app.use(summary.routes());
 
 // Bootstrap the server
-app.listen("0.0.0.0:$PORT");
+app.listen(process.env.PORT);
