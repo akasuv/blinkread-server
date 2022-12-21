@@ -1,8 +1,5 @@
 import Router from "koa-router";
 import { Configuration, OpenAIApi } from "openai";
-import dotenv from "dotenv";
-
-dotenv.config();
 
 const configuration = new Configuration({
   organization: process.env.OPENAI_ORGANIZATION,
@@ -14,8 +11,6 @@ const openai = new OpenAIApi(configuration);
 const router = new Router({
   prefix: "/summary",
 });
-
-let books = [1, 2, 3];
 
 router.post("/", async (ctx, next) => {
   console.log(ctx.request.body);
