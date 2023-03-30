@@ -4,13 +4,13 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "start": "node index.js"
+    "start": "node --watch index.js"
   },
   "dependencies": {
     "dotenv": "^16.0.3",
     "koa": "^2.14.1",
     "koa-body": "^6.0.1",
     "koa-router": "^12.0.0",
-    "openai": "^3.1.0"
+    "openai": "^3.2.1"
   }
 }
