@@ -45,7 +45,7 @@ router.post("/", async (ctx, next) => {
 
   try {
     const response = await openai.createCompletion({
-      model: "text-davinci-003",
+      model: "gpt-3.5-turbo",
       prompt: `
 	Generate an abstract from what the content say:
 	1. content: ${text.slice(0, 3000)}
